@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a7d8945663.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Embedding Video and Image</title>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <span><i class="fas fa-bars"></i></span>
+        <img class="logo" src="./img/yt-logo.png" alt="Youtube" />
+        <h4>YouTube</h4>
+      </header>
+      <div class="center">
+        <form>
+          <div class="search-container">
+            <div class="search-input">
+              <input
+                type="seacrh"
+                name="search"
+                placeholder="Search"
+                style="outline: none"
+              />
+            </div>
+          </div>
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="search-voice">
+          <i class="fas fa-microphone"></i>
+        </div>
+      </div>
+      <div>
+        <ul class="menu">
+          <li><i class="fas fa-video"></i></li>
+          <li><i class="fas fa-th"></i></li>
+          <li><i class="fas fa-bell"></i></li>
+          <li><i class="fas fa-user-circle"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <main>
+        <section class="main">
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/av91ijB3Zlk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
