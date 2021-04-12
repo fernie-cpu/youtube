@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,8 @@
   --search-btn-border-color: #303030;
   --search-btn-color-magnify: rgba(255, 255, 255, 0.3);
   --search-btn-color-magnify-hover: rgba(255, 255, 255, 0.5);
+  --color-text: #aaa;
+  --container-border-bottom: rgba(255, 255, 255, 0.1);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -35,6 +37,7 @@ section {
 body {
   background: #181818;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -53,6 +56,7 @@ nav {
 
 header {
   display: inherit;
+  align-items: center;
 }
 
 .fa-bars {
@@ -61,13 +65,9 @@ header {
   margin-left: 0.3rem;
 }
 
-h4 {
-  font-family: 'Roboto', sans-serif;
-}
-
 .logo {
-  width: 25px;
-  height: 17px;
+  width: 32px;
+  height: 24px;
   margin-right: 0.3rem;
 }
 
@@ -161,6 +161,10 @@ main {
   margin: 0 2.4rem 3rem 0;
 }
 
+.video-container {
+  border-bottom: 1px solid var(--container-border-bottom);
+}
+
 .video {
   position: relative;
   padding-top: 56px;
@@ -174,4 +178,62 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.video-info {
+  padding-top: 1.5rem;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.video-primary-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.video-views {
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.video-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.likes {
+  display: flex;
+  padding: 0 0 0.3rem 0;
+  border-bottom: 2px solid var(--color-text);
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-menu-container .btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  padding: 6px;
+  margin-left: 8px;
+}
+
+.video-menu-container .btn span {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 0.8rem;
+}
+
+.video-menu-container .share-btn span {
+  font-weight: 400;
 }

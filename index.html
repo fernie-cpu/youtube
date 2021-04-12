@@ -15,7 +15,7 @@
     <nav>
       <header>
         <span><i class="fas fa-bars"></i></span>
-        <img class="logo" src="./img/yt-logo.png" alt="Youtube" />
+        <img class="logo" src="./img/youtube.svg" alt="Youtube" />
         <h4>YouTube</h4>
       </header>
       <div class="center">
@@ -40,7 +40,7 @@
       </div>
       <div>
         <ul class="menu">
-          <li><i class="fas fa-video"></i></li>
+          <li><img src="./img/video-plus.svg" alt="" class="video-plus" /></li>
           <li><i class="fas fa-th"></i></li>
           <li><i class="fas fa-bell"></i></li>
           <li><i class="fas fa-user-circle"></i></li>
@@ -49,7 +49,7 @@
     </nav>
     <div class="content">
       <main>
-        <section class="main">
+        <section class="video-container">
           <div class="video">
             <iframe
               src="https://www.youtube.com/embed/av91ijB3Zlk"
@@ -59,7 +59,38 @@
               allowfullscreen
             ></iframe>
           </div>
+          <div class="video-info">
+            <h1 class="video-title">
+              Eminem - Quitter (Everlast Diss) ft. D12 (Lyrics)
+            </h1>
+            <div class="video-primary-info">
+              <p class="video-views">18,988 views • Dec 5, 2020</p>
+              <div class="video-menu-container">
+                <div class="likes">
+                  <button class="like-btn btn">
+                    <img src="./img/thumb-up.svg" alt="thumbs-up" />
+                    <span>8.3K</span>
+                  </button>
+                  <button class="dislike-btn btn">
+                    <img src="./img/thumb-down.svg" alt="thumbs-down" />
+                    <span>87</span>
+                  </button>
+                </div>
+                <button class="share-btn btn">
+                  <img src="./img/share.svg" alt="share" />
+                  <span>SHARE</span>
+                </button>
+                <button class="playlist-btn btn">
+                  <img src="./img/playlist-plus.svg" alt="save-playlist" />
+                </button>
+                <button class="more-options-btn btn">
+                  <img src="./img/dots-horizontal.svg" alt="more options" />
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
+        <section class="description"></section>
       </main>
     </div>
   </body>
