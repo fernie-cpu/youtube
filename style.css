@@ -17,6 +17,7 @@
   --search-btn-color-magnify-hover: rgba(255, 255, 255, 0.5);
   --color-text: #aaa;
   --container-border-bottom: rgba(255, 255, 255, 0.1);
+  --sub-btn: #bd0000;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -236,4 +237,50 @@ main {
 
 .video-menu-container .share-btn span {
   font-weight: 400;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  padding-top: 1.2rem;
+}
+
+.channel-pic img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.channel-primary-info {
+  padding-left: 1rem;
+}
+
+.channel-name {
+  display: flex;
+  align-items: center;
+}
+
+.channel-link {
+  width: auto;
+  text-decoration: none;
+  color: inherit;
+  padding-right: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.channel-subscribers {
+  color: var(--color-text);
+  font-size: 0.83rem;
+}
+
+.subscribe-btn {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  padding: 0.6rem 0.8rem;
+  font-weight: 600;
+  background: var(--sub-btn);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  color: inherit;
 }
