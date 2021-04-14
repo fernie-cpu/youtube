@@ -148,6 +148,11 @@ form,
   padding: 0 1rem;
 }
 
+.menu li img,
+.menu li i {
+  cursor: pointer;
+}
+
 .fa-user-circle {
   font-size: 1.8rem;
 }
@@ -264,7 +269,7 @@ main {
   text-decoration: none;
   color: inherit;
   padding-right: 0.4rem;
-  font-size: 0.9rem;
+  font-size: 0.87rem;
   font-weight: 600;
 }
 
@@ -283,4 +288,22 @@ main {
   border-radius: 2px;
   font-size: 0.9rem;
   color: inherit;
+}
+
+.video-description {
+  margin-top: 0.5rem;
+  padding-left: 4rem;
+  border-bottom: 1px solid var(--container-border-bottom);
+}
+
+.video-description p {
+  font-size: 0.9rem;
+}
+
+.show-more-btn {
+  width: auto;
+  margin: 1.2rem 0;
+  font-size: 0.77rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
