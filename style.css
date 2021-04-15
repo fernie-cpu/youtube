@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --search-background: #121212;
   --search-color: rgba(255, 255, 255, 0.88);
@@ -18,6 +12,15 @@
   --color-text: #aaa;
   --container-border-bottom: rgba(255, 255, 255, 0.1);
   --sub-btn: #bd0000;
+  --color: white;
+  --duration-bg: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -37,7 +40,6 @@ section {
 
 body {
   background: #181818;
-  color: white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -306,4 +308,49 @@ main {
   font-size: 0.77rem;
   font-weight: 600;
   color: var(--color-text);
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.thumbnail {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+}
+
+.thumbnail-img {
+  position: relative;
+}
+
+.thumbnail-img img {
+  height: 94px;
+}
+
+.duration {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: -2.3rem;
+  text-align: right;
+}
+
+.duration span {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 2px;
+  background: var(--duration-bg);
+}
+
+.thumbnail-img-overlay {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 0;
 }
